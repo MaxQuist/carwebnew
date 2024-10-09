@@ -11,7 +11,7 @@ stage('Cloning Git')
 stage('Build-and-tag')
 {
     /* This builds the image, this is synonomous to docker build using the command */
-    app.docker.build('xamq/car_docker_repo')
+    app = docker.build('xamq/car_docker_repo')
 }
 
 stage('Push to docker')
