@@ -17,6 +17,9 @@ stage('Build-and-tag')
 stage('Push to docker')
 {
     docker.withRegistry('https://registry.hub.docker.com', 'maxq')
+    {
+        app.push('latest')
+    }
 }
 
 stage('Deploy')
