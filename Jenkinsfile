@@ -22,7 +22,7 @@ stage('Push to docker')
 stage('Deploy')
 {
     sh "docker-compose down"
-    sh "dcoker-compose up -d"
+    sh "docker-compose up -d"
 }
 
 }
